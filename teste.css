@@ -1,0 +1,130 @@
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background-color: #F5F5F5;
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #01101E;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: header-entrada 1s linear;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #0586AB;
+}
+
+#logo {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: entrada 1s linear;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+#banner {
+    background-image: url('https://i.ytimg.com/vi/8ubZ6H42YRw/maxresdefault.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    animation: entrada 2s linear;
+}
+
+.container {
+    display: flex;
+    margin-top: 0px;
+    place-content: center;
+    min-height: 85vh;
+}
+
+.content {
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.502);
+    overflow: hidden;
+}
+
+.content span {
+    font-size: 5em;
+    color: #d9d9d9;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 140%;
+    display: flex;
+    background: linear-gradient(0deg, #0586AB 0%, rgba(0,0,0,0.001) 68%);
+    animation: back 2s linear infinite;
+
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color: #01101E;
+    border-radius: 10px;
+}
+
+@keyframes back {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

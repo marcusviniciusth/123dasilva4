@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: scale(101%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(100%)
+    }
+}
+
+@keyframes header-entrada {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #01101E;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: header-entrada 1s linear;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #0586AB;
+}
+
+#logo {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+#banner {
+    background-image: url('https://legadodadc.com.br/wp-content/uploads/2021/10/FBwMUCvXoAQkB0q.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.container {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    border: 2px solid #0586AB;
+    padding: 130px 100px;
+    margin: 50px 250px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 15px #000;
+    animation: entrada 1s linear;
+}
+.span {
+    color: #FFF;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contatenos {
+    width: 300px;
+    height: 20px;
+    border: 1px solid #0586AB;
+    border-radius: 20px;
+    color:#FFF;
+    padding: 5px 10px;
+}
+
+.ctt-text {
+    color: #FFF;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.contatar {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-c {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.button {
+    width: 150px;
+    height: 60px;
+    color: #FFF;
+    border: 3px solid #0586AB;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.button:hover {
+    background-color: #0586AB;
+    border: 3px solid #0586AB;
+    color: #000;
+}
